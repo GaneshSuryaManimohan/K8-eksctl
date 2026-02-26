@@ -15,13 +15,13 @@ PLATFORM=$(uname -s)_$ARCH
 
 * **What this does:**
 
-1. ARCH=amd64
+1. `ARCH=amd64`
     - Defines the system architecture (64-bit Intel/AMD).
 
-2. uname -s
+2. `uname -s`
     - Returns the operating system name (e.g., Linux).
 
-3. PLATFORM=$(uname -s)_$ARCH
+3. `PLATFORM=$(uname -s)_$ARCH`
     - Combines OS and architecture to form: `Linux_amd64`
 
 This ensures the correct binary is downloaded for your system.
